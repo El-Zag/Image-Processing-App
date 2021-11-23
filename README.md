@@ -1,46 +1,39 @@
-### **Application de traitement d'image en JavaFX**
+### **Image Processing Application in JavaFX**
 
-**Auteurs :** Eloïse Zaghrini, Amandine Bouguessa, Armelle Coutaux
+**Autors :** Eloïse Zaghrini, Amandine Bouguessa, Armelle Coutaux
 
-Cette application permet de traiter une image de format .png ou .jpg avec différentes options.
-Chaque opération peut être réalisée successivement
+This application can modify an image .png or .jpg with different options, and export the result as a .png .
+Each operation can be carried out successively
 
-Importez une image avec fond (Seam Carving ne fonctionne pas sur les images sans fonds) et commencez !
+Note : Seam carving doesn't work on .png without backgrounds ! 
 
-Une fois vos opérations réalisées, enregistrez votre image (elle sera au format .png).
+All the options available : 
 
-Voici les différentes opérations disponibles :
+- **Image Cropping**
 
-- **Recagrage de l'image (rognage)**
+In this feature, the user can crop the image left, right, top or bottom, using sliders.
+The values ​​given to the left / top sliders are the number of pixels that will be cropped on the left / top of the image.
+The size of the image (width / height) minus the values ​​given to the right / bottom sliders are the number of pixels to crop right / bottom.
 
-Dans cette fonctionnalité, l'utilisateur peut rogner l'image à gauche, à droite, en haut ou en bas, à l'aide de sliders.
-Les valeurs données aux sliders gauche/haut sont le nombres de pixels qui seront rognés à gauche/en haut de l'image.
-La taille de l'image (largeur/hauteur) moins les valeurs données aux sliders droit/bas sont le nombre de pixels à rogner à droite/en bas.
+Choose the desired size then press "Image processing".
 
-Choisissez la taille souhaitée puis appuyez sur "Traitement de l'image".
+- **Scaling**
 
-- **Mise à l'échelle**
+In this feature, the image is scalled to the desired size while retaining its entirety.
 
-Dans cette fonctionnalité, l'image est applatie à la taille souhaitée en conservant son intégralité.
-
-Choisissez la largeur et la hauteur souhaitée et appuyez sur "Traitement de l'image".
+Choose the desired width and height and press "Image processing".
 
 - **Seam Carving**
 
-Dans cette fonctionnalité, l'utilisateur peut redimensionner son image en utilisant la fonctionnalité du Seam Carving, en diminuant ses dimensions ou en les augmentant. Le SeamCarving repose sur le calcul des énergies des pixels de l'image ( en norme 1 ou 2 au choix de l'utilisateur ), et ensuite sur la suppression/le dédoublement des coutures de pixels ayant l'énergie la plus basse. Ce traitement permet de redimensionner l'image en gardant un maximum d'informations !
+In this feature, the user can resize his image using the Seam Carving feature, decreasing its dimensions or increasing them. SeamCarving is based on the calculation of the energies of the pixels of the image (in standard 1 or 2 at the choice of the user), and then on the removal / duplication of the pixel seams having the lowest energy. This processing makes it possible to resize the image while keeping as much information as possible!
 
-Choisissez la largeur et la hauteur souhaitée et appuyez sur "Traitement de l'image".
+Choose the desired width and height and press "Image processing".
 
-- **Interface de dessin**
+- **Drawing Interface**
 
-Permet de dessiner sur l'image.
-Choisissez la couleur souhaitée à l'aide des trois sliders Bleu/Rouge/Vert (visualisation dynamique dans le rectangle de couleur) et choisissez l'épaisseur de pinceau souhaitée.
-
-Dessinez ce que vous voulez !
+Allows you to draw on the image.
+Choose the desired color using the three sliders Blue / Red / Green (dynamic visualization in the color rectangle) and choose the desired brush thickness.
 
 - **Undo/Redo**
 
-Vous vous êtes trompé ? Pas de problème ! Revenez à vos actions précédentes, vous pouvez aussi revenir à l'action suivante.
-
-
-
+Made a mistake ? No problem ! Go back to your previous actions, you can also go back to the following action.
